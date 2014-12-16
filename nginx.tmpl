@@ -85,7 +85,10 @@ upstream {{ $host }} {
 
 server {
 	server_name {{ $host }};
-	rewrite ^(.*) https://{{ $host }}$1 permanent;
+	
+	location / {
+		proxy_pass http://{{ $host }};
+	}
 }
 
 server {
