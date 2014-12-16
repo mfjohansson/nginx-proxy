@@ -1,5 +1,5 @@
 FROM nginx:1.7.8
-MAINTAINER Jason Wilder jwilder@litl.com
+MAINTAINER Magnus Johansson <ao62x@notsharingmy.info>
 
 # Install wget and install/updates certificates
 RUN apt-get update \
